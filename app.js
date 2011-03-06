@@ -27,9 +27,12 @@ myapp.configure(function(){
 
 // Routes
 // Homepage
-myapp.get('/', function(req, res, next){
-  res.render('index.html');
-});
+
+var site = require('./lib/site');
+myapp.get('/', site.index);
+myapp.get('/login', site.login);
+myapp.post('/auth', site.auth);
+
 
 // Status API
 // http://localhost:4001/status 

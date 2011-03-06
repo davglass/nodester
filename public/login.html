@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Nodester | Open Source Node.JS Hosting Platform</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<!--
+ablaze, a free CSS web template by spyka Webmaster (www.spyka.net)
+
+Download: http://www.spyka.net/web-templates/ablaze/
+
+License: Creative Commons Attribution
+//-->
+
+<script type="text/javascript" src="/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/thickbox.js"></script>
+
+<link rel="stylesheet" href="/thickbox.css" type="text/css" />
+
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-119008-21']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+<style>
+    body {
+        background-image: none;
+    }
+    div#wrapper {
+        background-color: black;
+        width: 100%;
+    }
+    #login_form {
+        border: 1px solid #ccc;
+        padding: 1em;
+        width: 300px;
+        margin: 15px auto;
+        position: relative;
+        padding-bottom: 40px;
+    }
+    #login_button {
+        position: absolute;
+        right: 25px;
+    }
+</style>
+<script>
+$(document).ready(function() {
+    $('#login_form input[name=username]')[0].focus();
+});
+</script>
+</head>
+
+<body>
+	 
+	<div id="hiddenModalContent" style="display:none"> 
+		<h3>Did you get your coupon code? <a href="#" onclick="tb_remove()">I wish!</a></p></h3>
+		<fieldset>
+
+			<form action="/user" method="post">
+				<p><label for="name">Coupon:</label>
+				<input type="password" name="coupon" id="coupon" value="" /><br />		
+				<label for="name">Username:</label>
+				<input type="text" name="user" id="user" value="" /><br />		
+				<label for="name">Password:</label>
+				<input type="password" name="password" id="password" value="" /><br />		
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" value="" /><br />
+				<label for="rsakey">Public RSA Key:</label>
+				<textarea cols="60" rows="8" name="rsakey" id="rsakey">
+Copy & Paste RSA key from command line: 
+"cat ~/.ssh/id_rsa.pub | pbcopy"</textarea><br />
+				<input type="submit" name="send" class="formbutton" value="Send" />
+			</form>
+
+		</fieldset>
+	 
+	</div>
+
+
+	<div id="wrapper">
+		<div id="sitename">
+			<h1><a href="/"> Node<strong>ster</strong></a></h1>
+		</div>
+       <div id="nav">
+			<ul>
+				<li class="selected"><a href="/"><span>Home</span></a></li>
+                <li><a href="#TB_inline?height=400&width=600&inlineId=hiddenModalContent&modal=true" class="thickbox"><span>Register</span></a></li>                
+                <li><a href="/api.html"><span>API</span></a></li>
+                <li><a href="http://irc.nodester.com"><span>IRC</span></a></li>
+                <li><a href="http://nodester.tumblr.com/"><span>Blog</span></a></li>
+			</ul>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+    <div id="login_form">
+        <form method="post" action="/auth">
+        <strong>Username:</strong> <input type="text" name="username" value=""><br><br>
+        <strong>Password:</strong> <input type="password" name="password" value=""><br><br>
+        <input type="submit" value="Login" id="login_button">
+        </form>
+    </div>
+</body>
+</html>
