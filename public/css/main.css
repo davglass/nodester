@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+	font-family: Verdana, Geneva, sans-serif;
+    background-color: #fff;
+}
+
+#hd {
+    background-color: #000;
+    padding: 0 5em;
+}
+
+#bd {
+    margin: auto; /* center in viewport */
+    width: 960px;
+}
+
+#hd h1 {
+	font-size:48px;
+	letter-spacing:-5px;
+	margin:0;
+	height:72px;
+	padding:18px 0 0;
+	text-transform:uppercase;
+	text-shadow: 2px 2px #000;
+}
+#hd h1 a,
+#hd h1 a:hover {
+	color:#fff;
+	font-weight:normal;
+	text-decoration:none;
+}
+#hd h1 strong {
+	color: #A81212;
+}
+
+#hd ul li {
+    display: inline;
+    float: left;
+}
+#hd ul li a {
+    display: block;
+}

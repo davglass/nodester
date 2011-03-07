@@ -1,0 +1,37 @@
+<div class="footer-box yui3-u-1-4">
+    <h4>About Us</h4>
+    <p>We started this project because the "other" node.js hosting services were not sending out coupon invitations.  Now anyone can host node.js apps! You can access our source code repository at <a href="http://github.com/nodester">http://github.com/nodester</a></p>
+</div>
+<div class="footer-box yui3-u-1-4">
+    <h4>Nodester Core Team</h4>
+    <ul>
+        <li><a href="http://twitter.com/chrismatthieu">@ChrisMatthieu</a></li>
+        <li><a href="http://twitter.com/danbuk">@DanBUK</a></li>
+        <li><a href="http://twitter.com/marcosvm">@Marcosvm</a></li>
+    </ul>
+</div>
+<div id="node_news" class="footer-box yui3-u-1-4">
+    <h4>Node.js News</h4>
+    <ul>
+    </ul>
+</div>
+<div class="footer-box yui3-u-1-4">
+    <h4>Search our site</h4>
+    <form action="#" method="get">
+    <p>
+        <input type="text" id="searchquery" size="18" name="searchterm" value="coming soon"/>
+        <input type="submit" id="searchbutton" value="Search" class="formbutton" />
+    </p>
+    </form>
+</div>
+
+<!-- twitter follow badge by go2web20 --> 
+<script src='http://files.go2web20.net/twitterbadge/1.0/badge.js' type='text/javascript'></script><script type='text/javascript' charset='utf-8'><!--
+tfb.account = 'nodester';
+tfb.label = 'follow-us';
+tfb.color = '#35ccff';
+tfb.side = 'r';
+tfb.top = 175;
+tfb.showbadge();
+--></script> 
+<!-- end of twitter follow badge -->

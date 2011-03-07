@@ -1,0 +1,13 @@
+<div class="yui3-u-1-3">
+    <h1><a href="/"> Node<strong>ster</strong></a></h1>
+</div>
+<div id="nav" class="yui3-u-2-3">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/api">API</a></li>
+        <li><a href="http://irc.nodester.com">IRC</span></a></li>
+        <li><a href="http://nodester.tumblr.com/">Blog</a></li>
+    </ul>
+</div>
+

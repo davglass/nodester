@@ -11,7 +11,14 @@ var express = require('express'),
     url = require('url'),
     sys = require('sys'),
     config = require('./config'),
+    dust = require('express-dust'),
     middle = require('./lib/middle');
+
+
+dust.makeBase({
+    title: 'Nodester | Open Source Node.JS Hosting Platform'
+});
+
 
 process.on('uncaughtException', function (err) {
    console.log(err.stack);
@@ -29,9 +36,12 @@ myapp.configure(function(){
 // Homepage
 
 var site = require('./lib/site');
+
 myapp.get('/', site.index);
+/*
 myapp.get('/login', site.login);
 myapp.post('/auth', site.auth);
+*/
 
 
 // Status API

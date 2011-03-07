@@ -1,0 +1,6 @@
+{>"layouts/main"/}
+
+
+{<body}
+    <p>This is my index.dust main body</p>
+{/body}
